@@ -1,0 +1,28 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is Namaste React by Akshay",
+  "libraries": "App.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nurulit"
+  },
+  "keywords": [],
+  "author": "Nurulain",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.0"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "brousersList": [
+    "last 2 versions"
+  ]
+}

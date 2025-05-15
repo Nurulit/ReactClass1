@@ -1,7 +1,8 @@
-
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 // HTML Stucture
 /**  
-*
+*s
 *
 *
 <div id='heading' class="text-3xl font-bold text-gray-900">
@@ -12,13 +13,14 @@
 *
 *
 **/
-const heading = React.createElement("h1", {
-    className: "text-3xl font-bold text-gray-900",
-    id: 'heading',
-}, 'Hello React World!');
-console.log(heading);// object with properties and methods of react element
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading); // This render metod basically takes the react element(Object) and convert it into html and put it in the root element(DOM)
+
+// const heading = React.createElement("h1", {
+//     className: "text-3xl font-bold text-gray-900",
+//     id: 'heading',
+// }, 'Hello React World!');
+// console.log(heading);// object with properties and methods of react element
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(heading); // This render metod basically takes the react element(Object) and convert it into html and put it in the root element(DOM)
 
 // Nested Stucture
 /**  
@@ -35,19 +37,19 @@ root.render(heading); // This render metod basically takes the react element(Obj
 *
 *
 **/
-const parent = React.createElement(
-    "div",
-    { id: "parent" },
-    React.createElement(
-        "div",
-        { id: "child" },
-        React.createElement("h1", {}, "I am an H1 Tag")
-    )
-);
+// const parent = React.createElement(
+//     "div",
+//     { id: "parent" },
+//     React.createElement(
+//         "div",
+//         { id: "child" },
+//         React.createElement("h1", {}, "I am an H1 Tag")
+//     )
+// );
 
-console.log(parent); // Object
-const root1 = ReactDOM.createRoot(document.getElementById("root"));
-root1.render(parent);
+// console.log(parent); // Object
+// const root1 = ReactDOM.createRoot(document.getElementById("root"));
+// root1.render(parent);
 
 // Nested Stucture
 /**  
@@ -66,22 +68,22 @@ root1.render(parent);
 *
 **/
 
-const parent2 = React.createElement(
-    "div",
-    { id: "parent2" },
-    React.createElement(
-        "div",
-        { id: "child2" },
-        [
-            React.createElement("h1", {}, "I am an H1 Tag"), 
-            React.createElement("h2", {}, "I am an H2 Tag")
-        ]
-    )
-);
+// const parent2 = React.createElement(
+//     "div",
+//     { id: "parent2" },
+//     React.createElement(
+//         "div",
+//         { id: "child2" },
+//         [
+//             React.createElement("h1", {}, "I am an H1 Tag"), 
+//             React.createElement("h2", {}, "I am an H2 Tag")
+//         ]
+//     )
+// );
 
-console.log(parent2); // Object
-const root2 = ReactDOM.createRoot(document.getElementById("root"));
-root2.render(parent2);
+// console.log(parent2); // Object
+// const root2 = ReactDOM.createRoot(document.getElementById("root"));
+// root2.render(parent2);
 
 
 // Nested Stucture
@@ -105,7 +107,7 @@ root2.render(parent2);
 *
 **/
 
-const parent3 = React.createElement( "div", { id: "parent3" }, 
+const parent3 = React.createElement("div", { id: "parent3" }, 
     [
     React.createElement(
         "div",
